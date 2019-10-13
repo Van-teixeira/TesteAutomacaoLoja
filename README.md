@@ -1,34 +1,38 @@
-# provaautomacao
-Estruturação de um projeto BDD em java com Cucumber.
 
-Guia de instalação:
+Estrutura do projeto Teste Automação Loja em formato BDD Cucumber
+
+Utilização da linguagem Java
+
+Passo a passo da instalação:
 
 Baixe o projeto e descompacte
-Abra o InteliJ
+Abra o IntelliJ IDEA
 Clique em Import Project
 Identifique o caminho do projeto baixado
-Selecione import project from external model > escolha maven > selecione import Maven project automatically > next > ok > next > finish
+Selecione import project from external model > escolha maven > selecione import Maven project automatically > next > ok > next > finish.
+
 
 Agora com a IDE aberta, siga pelos diretórios: src>test>java>com.testeautomacao>runner>TestRunner e execute o teste através dessa classe.
 
-*OBSERVE O COMPORTAMENTO E A UTILIZAÇÃO DO BDD NAS CLASSES DENTRO DOS PACOTES FEATURES (ComprarProduto.feature) E STEPS (ComprarProduto)
+Obs.: Atentar para o comportamento e BDD das classes dentro dos pacotes features(ComprarProdutoLoja.feature) e steps (ComprarProdutoLoja).
+
+Os objetos são mapeados nas classes do diretorio "PAGEOBJECTS", as suas ações e comportamentos são executado na "TASKS" e as suas validações no "VERIFICATIONPOINTS"
+
+ - A classe STEPS instancia e chama as ações das classes "TASKS" para executar o comportamento definido nas FEATURES
+ 
+ Se houver qualquer problema no projeto, verifique as dependências nos arquivos POM.XML
+ 
+ O teste foi rodado no Chrome browser.
 
 
-*OBSERVE QUE OS OBJETOS SÃO MAPEADOS NAS CLASSES DO DIRETÓRIO "PAGEOBJECTS", SUAS AÇÕES E COMPORTAMENTOS SÃO EXECUTADOS NO "TASKS" 
-E SUAS VALIDAÇÕES NO "VERIFICATIONPOINTS".
-
-
-*OBSERVE QUE A CLASSE STEPS APENAS INSTANCIA E CHAMA AS AÇÕES DAS CLASSES TASKS PARA EXECUTAR O COMPORTAMENTO DEFINIDO NAS FEATURES.
-
-Qualquer problema, lembre-se de verificar as dependências nos arquivos POM.XML 
 
 Esse projeto foi feito utilizando:
 
-IDE: IntelliJ IDEA Community Version 2018.1.6
-JAVA VERSION: jdk1.8.0_181
-MAVEN VERSION: 4.0.0
+IDE: IntelliJ IDEA 2019.2.3 (ULTIMATE EDITION)
+JAVA VERSION: jdk1.1.8.0_221
+APACHE MAVEN VERSION: 3.6.1
 
-O desafio contempla:
+O desafio contempla o cenário:
 
 Caso de teste: realizar uma compra com sucesso.
 1.              Acessar o site: www.automationpractice.com.
